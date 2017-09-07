@@ -1,14 +1,40 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      NoahWatcher
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='refresh()'>
+        <ion-icon name="refresh"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="https://pbs.twimg.com/profile_images/695807633299603456/Pe-dnBud_400x400.jpg">
+    </ion-avatar>
+    <h2>Noah Koch</h2>
+    <p> Daily productivity overview </p>
+  </ion-item>
+
+  <ion-list>
+
+    <ion-item-group *ngFor='let day of productivity'>
+
+      <ion-item-divider color="light">{{ day.date }}</ion-item-divider>
+
+      <ion-item *ngFor='let activity of day.value'>
+        <p item-left> # {{ activity.rank }} </p>
+        <h2> {{ activity.category }}</h2>
+        <h3>{{ activity.time_spent_seconds }}</h3>
+      </ion-item>
+
+    </ion-item-group>
+
+  </ion-list>
+
 </ion-content>
