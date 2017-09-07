@@ -1,26 +1,25 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a starter template for the [Heartland Developer Conference](http://careerlink.com/hdc/) 2017.
 
-## How to use this template
+## How to use this sample app
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+* `git clone` this repository
+* Run `npm install` inside of this repo's directory
+* Run `ionic serve --lab` to see output in browser
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
+* To run on an emulator or connected device, run the following:
 
 ```bash
 $ ionic cordova platform add ios
 $ ionic cordova run ios
 ```
 
-Substitute ios for android if not on a Mac.
+### More information on Ionic
+ - [Framework Website](http://ionicframework.com/)
+ - [Documentation](http://ionicframework.com/docs/)
+ - [The Company](http://ionicframework.com/about)
 
+### Questions for me
+
+You can hit me up on [Github (/thebrockellis)](https://www.github.com/thebrockellis) or on [Twitter (@TheBrockEllis)](http://www.twitter.com/TheBrockEllis).
+
+I also occasionally write things on my [blog](http://www.thebrockellis.com).
